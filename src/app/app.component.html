@@ -1,0 +1,21 @@
+<!-- <header>
+
+</header> -->
+<div class="row">
+    <div class="col col-sm-8 offset-sm-2 ">
+        <h3>Tour of Heroes</h3>
+    </div>
+</div>
+<div class="row">
+    <div class="col col-sm-8 offset-sm-2">
+        <button type="button" class="btn btn-outline-secondary " (click)=loadHeroList() [ngClass]="{active:isActive}">Heros</button>
+        <button type="button" class="btn btn-outline-secondary" (click)=showDashboard() [ngClass]="{active:!isActive}">Dashboard</button>
+    </div>
+
+    <!--   <a [routerLink]="[ 'herosList' ]" routerLinkActive="active"><button type="button" class="btn btn-outline-secondary "  (click)=loadHeroList()>Heros</button></a>
+            -->
+
+    <!--      <a [routerLink]="[ '' ]" routerLinkActive="active"></a> <button type="button" class="btn btn-outline-secondary" [ngClass]="{active:!isActive}">Dashboard</button>
+       -->
+</div>
+<router-outlet></router-outlet>

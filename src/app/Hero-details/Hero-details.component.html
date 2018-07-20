@@ -1,0 +1,32 @@
+
+
+    <div class="row">
+        <div class="col col-sm-1 offset-sm-2 text-right">
+            <span>Id : </span>
+        </div>
+        <div class="col col-sm-7">
+           
+            {{hero?.id}}  
+
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col col-sm-1 offset-sm-2 text-right">
+            <label for="heroName">Name </label> 
+        </div>
+        <div class="col col-sm-7">
+           
+            <input  class="form-control" type="text" id="heroName"  [value]="hero?.name">
+        </div>
+    </div>
+   
+  
+    <div class="row">
+        <div class="col col-sm-1 offset-sm-2 text-right">
+         
+        </div>
+        <div class="col col-sm-7">
+            <button class="btn btn-secondary " (click)=goToHeroList()>Back</button>
+        </div>
+    </div>

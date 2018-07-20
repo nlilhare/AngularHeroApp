@@ -1,0 +1,37 @@
+
+<div class="row">
+    <div class="col col-sm-4 offset-sm-4 ">
+        <h3 class="text-center">{{hero.name}} Details!</h3>
+    </div>
+    
+</div>
+
+<div class="row">
+    <div class="col col-sm-1 offset-sm-2 text-right">
+        <span>Id : </span>
+    </div>
+    <div class="col col-sm-7">
+       
+        {{hero.id}}  
+    </div>
+</div>
+
+<div class="row">
+    <div class="col col-sm-1 offset-sm-2 text-right">
+        <label for="heroName">Name </label> 
+    </div>
+    <div class="col col-sm-7">
+       
+        <input  class="form-control"type="text" id="heroName"  [(ngModel)]="hero.name">
+    </div>
+</div>
+
+<div class="row">
+    <div class="col col-sm-1 offset-sm-2 text-right">
+     
+    </div>
+    <div class="col col-sm-7">
+        <button class="btn btn-secondary btn-sm">Back</button>
+    </div>
+</div>
+

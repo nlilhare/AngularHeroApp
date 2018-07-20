@@ -1,0 +1,23 @@
+
+<div class="row">
+    <div class="col col-sm-8 offset-sm-2">
+            <div *ngFor="let hero of heros" class="listBox" (click)="onSelected(hero)" >
+                    <div class="heroId">
+                        {{hero.id}}  
+                    </div>
+                    <div class="heroName" [class.active]="hero === selectedHero">{{hero.name}}</div>
+                </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col col-sm-8 offset-sm-2">
+        <div *ngIf="selectedHero">
+            <h3> {{selectedHero.name}}  is my hero</h3>
+            <button type="button" class="btn btn-secondary" (click)=showHeroDetails(selectedHero)>View Details</button>
+           
+        </div>
+    </div>
+</div>
+
+<!-- <heroDetails *ngIf="isShowHeroDetails" [hero]="selectedHero"></heroDetails>  -->
