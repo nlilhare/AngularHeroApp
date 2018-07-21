@@ -28,9 +28,10 @@ export class HeroList
     }
     showHeroDetails(user_selectedHero:Hero){
         this.isShowHeroDetails=true;
-        console.log("Show details called  "+user_selectedHero.name);
-        this.HeroService.selectedHero.emit(user_selectedHero);
-        this.router.navigate(["heroDetails"]);
+      this.HeroService.setSelectedHero(user_selectedHero);
+        
+      /*  this.HeroService.selectedHero.emit(user_selectedHero);
+       */ this.router.navigate(["heroDetails"]);
    
     }
 }

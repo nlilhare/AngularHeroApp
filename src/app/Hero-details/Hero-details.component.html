@@ -1,12 +1,11 @@
 
-
-    <div class="row">
+<div  *ngIf="hero">    <div class="row">
         <div class="col col-sm-1 offset-sm-2 text-right">
             <span>Id : </span>
         </div>
         <div class="col col-sm-7">
            
-            {{hero?.id}}  
+            {{hero.id}}  
 
         </div>
     </div>
@@ -17,7 +16,7 @@
         </div>
         <div class="col col-sm-7">
            
-            <input  class="form-control" type="text" id="heroName"  [value]="hero?.name">
+            <input  class="form-control" type="text" id="heroName"  [(ngModel)]="hero.name">
         </div>
     </div>
    
@@ -30,3 +29,4 @@
             <button class="btn btn-secondary " (click)=goToHeroList()>Back</button>
         </div>
     </div>
+</div>
